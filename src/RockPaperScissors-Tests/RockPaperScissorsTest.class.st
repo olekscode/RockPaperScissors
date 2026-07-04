@@ -6,6 +6,32 @@ Class {
 }
 
 { #category : 'tests' }
+RockPaperScissorsTest >> testPaperPlayAgainstRock [
+
+	| rock paper |
+	
+	rock := Rock new.
+	paper := Paper new.
+	
+	self
+		assert: (paper playAgainst: rock)
+		equals: paper 
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testRockPlayAgainstPaper [
+
+	| rock paper |
+	
+	rock := Rock new.
+	paper := Paper new.
+	
+	self
+		assert: (rock playAgainst: paper)
+		equals: paper 
+]
+
+{ #category : 'tests' }
 RockPaperScissorsTest >> testRockPlayAgainstScissors [
 
 	| rock scissors |
