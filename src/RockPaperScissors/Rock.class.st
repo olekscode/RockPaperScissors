@@ -10,3 +10,9 @@ Rock >> playAgainst: aScissors [
 	
 	^ self
 ]
+
+{ #category : 'as yet unclassified' }
+Rock >> playAgainstScissors: aScissors [ 
+
+	^ self
+]
