@@ -141,6 +141,19 @@ RockPaperScissorsTest >> testScissorsPlayAgainstScissors [
 ]
 
 { #category : 'tests' }
+RockPaperScissorsTest >> testScissorsPlayAgainstSpock [
+
+	| scissors spock |
+	
+	spock := Spock new.
+	scissors := Scissors new.
+	
+	self
+		assert: (scissors playAgainst: spock)
+		equals: spock 
+]
+
+{ #category : 'tests' }
 RockPaperScissorsTest >> testSetOfPapers [
 
 	| set |
@@ -165,4 +178,17 @@ RockPaperScissorsTest >> testSetOfScissors [
 	set := { Scissors new . Scissors new } asSet.
 	
 	self assert: set size equals: 1
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testSpockPlayAgainstScissors [
+
+	| scissors spock |
+	
+	spock := Spock new.
+	scissors := Scissors new.
+	
+	self
+		assert: (spock playAgainst: scissors)
+		equals: spock 
 ]

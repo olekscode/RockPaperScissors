@@ -27,3 +27,9 @@ Scissors >> playAgainstScissors: aScissors [
 	
 	^ self
 ]
+
+{ #category : 'as yet unclassified' }
+Scissors >> playAgainstSpock: aSpock [
+
+	^ aSpock
+]
