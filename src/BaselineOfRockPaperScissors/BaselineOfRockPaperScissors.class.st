@@ -10,6 +10,8 @@ BaselineOfRockPaperScissors >> baseline: spec [
 	<baseline>
 	
 	spec for: #common do: [  
+		spec preLoadDoIt: [ Transcript open ].
+		spec postLoadDoIt: [ 'I am loaded :)' traceCr ].
 		
 		spec
 			baseline: 'MathRandomNumbers'
