@@ -10,8 +10,8 @@ BaselineOfRockPaperScissors >> baseline: spec [
 	<baseline>
 	
 	spec for: #common do: [  
-		spec preLoadDoIt: [ Transcript open ].
-		spec postLoadDoIt: [ 'I am loaded :)' traceCr ].
+		spec preLoadDoIt: #preLoad.
+		spec postLoadDoIt: #postLoad.
 		
 		spec
 			baseline: 'MathRandomNumbers'
@@ -36,4 +36,16 @@ BaselineOfRockPaperScissors >> baseline: spec [
 			group: 'default'
 			with: #('Tests') ]
 	
+]
+
+{ #category : 'script' }
+BaselineOfRockPaperScissors >> postLoad [
+
+	'I am loaded :)' traceCr
+]
+
+{ #category : 'as yet unclassified' }
+BaselineOfRockPaperScissors >> preLoad [
+
+	Transcript open
 ]
