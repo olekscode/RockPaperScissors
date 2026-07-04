@@ -1,6 +1,6 @@
 Class {
 	#name : 'Rock',
-	#superclass : 'Object',
+	#superclass : 'Hand',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
@@ -9,6 +9,17 @@ Class {
 Rock >> playAgainst: aHand [
 	
 	^ aHand playAgainstRock: self
+]
+
+{ #category : 'as yet unclassified' }
+Rock >> playAgainstPaper: aPaper [ 
+	^aPaper
+]
+
+{ #category : 'as yet unclassified' }
+Rock >> playAgainstRock: aRock [ 
+	
+	^ self
 ]
 
 { #category : 'as yet unclassified' }
